@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Ký Tự</title>
+</head>
+<body>
+<script>
+    let arr = prompt("nhập số vào đây cho tao");
+    let char = prompt('nhập kí tự cần kiểm tra');
+    function checkArray(arr,char){
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]==char){
+                count++;
+            }
+        }
+        if(count>0){
+            return count;
+        }
+        else {
+            return  -1;
+        }
+    }
+    alert(checkArray(arr,char));
+</script>
+</body>
+</html>

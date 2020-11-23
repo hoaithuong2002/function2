@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+</head>
+<body>
+<script>
+    let r = +prompt('nhập bán kính');
+
+    function tinhDientich(r) {
+        let pi = 3.14;
+        let a = Math.round(r * pi * r);
+        return (a);
+    }
+
+    function tinhChuvi(r) {
+        let pi = 3.14;
+        let b = Math.round(2 * r * pi)
+        return (b);
+    }
+
+    alert('dien tich là : ' + tinhDientich(r));
+    alert('chu vi là : ' + tinhChuvi(r));
+
+
+</script>
+</body>
+</html>
